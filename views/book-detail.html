@@ -1,0 +1,49 @@
+<!--view that diplays the details of paricular books-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-inverse">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>BOOK NAME</th>
+                        <th>AUTHOR</th>
+                        <th>MEDIA TYPE</th>
+                        <th>COUNTRY</th>
+                        <th>PAGES</th>
+                        <th>PUBLISHER</th>
+                        <th>RELEASED DATE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{{bookname}}</td>
+                        <td>{{author}}</td>
+                        <td>{{media}}</td>
+                        <td>{{country}}</td>
+                        <td>{{pages}}</td>
+                        <td>{{publisher}}</td>
+                        <td>{{released|date:'short'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="centre" style="font-family: 'Muli', sans-serif; color: red;" ng-if="povs">Pov Charcters</h2>
+
+            <div ng-repeat="name1 in povs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card card-body">
+                                <h4 class="card-title">{{name1}}</h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>

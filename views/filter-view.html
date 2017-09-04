@@ -1,0 +1,13 @@
+<div class=container>
+    <div class="row">
+        <div class="col-md-12">
+            <!--filtering the list with certain keys-->
+            <div ng-repeat="item in data|orderBy:'-name'|filter:author|filter:name|filter:gender|filter:region|filter:year">
+                <!--binding the directives with their respective view-->
+                <book-list book-object="item" ng-show="item.isbn"></book-list>
+                <char-list char-object="item" ng-show="item.gender"></char-list>
+                <house-list house-object="item" ng-show="item.region"></house-list>
+            </div>
+        </div>
+    </div>
+</div>

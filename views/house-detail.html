@@ -1,0 +1,67 @@
+<!--view that diplays the details of paricular houses-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>House Name</h3></div>
+                <div class="panel-body">
+                    {{housename}}
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="coat">
+                <div class="panel-heading">
+                    <h3>Coat of Arms</h3></div>
+                <div class="panel-body">
+                    {{coat}}
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="region">
+                <div class="panel-heading">
+                    <h3>Region</h3></div>
+                <div class="panel-body">
+                    {{region}}
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="founded">
+                <div class="panel-heading">
+                    <h3>Founded</h3></div>
+                <div class="panel-body">
+                    {{founded}}
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="overlord">
+                <div class="panel-heading">
+                    <h3>OverLord</h3></div>
+                <div class="panel-body">
+                    {{overlord}}
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="founder">
+                <div class="panel-heading">
+                    <h3>Founder</h3></div>
+                <div class="panel-body">
+                    {{founder}}
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="sworn">
+                <div class="panel-heading">
+                    <h3>Sworn Characters</h3></div>
+                <div ng-repeat="person in sworn">
+                    <div class="panel-body">
+                        {{person}}
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" ng-if="titles[0]">
+                <div class="panel-heading">
+                    <h3>Titles</h3></div>
+                <div ng-repeat="title in titles">
+                    <div class="panel-body">
+                        {{title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

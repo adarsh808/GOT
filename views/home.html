@@ -1,0 +1,14 @@
+<!--the initial view in the dynamic par of the page-->
+<div class=container>
+    <div class="row">
+        <div class="col-md-12">
+
+            <div ng-repeat="item in data|orderBy:'name'">
+                <!--binding the directives with their respective view-->
+                <book-list book-object="item" ng-show="item.isbn"></book-list>
+                <char-list char-object="item" ng-show="item.gender"></char-list>
+                <house-list house-object="item" ng-show="item.region"></house-list>
+            </div>
+        </div>
+    </div>
+</div>

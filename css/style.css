@@ -1,0 +1,209 @@
+body {
+    font: normal 14px/1.7 "Open Sans", "Open Sans Light";
+    word-spacing: 1.5px;
+    position: relative;
+}
+#carousel1 {
+    margin-bottom: 30px;
+}
+#about {} #about p {
+    padding-left: 190px;
+}
+#about .outer {
+    background-color: #DFDBDB;
+    margin-bottom: 10px;
+    border: 1px solid #B8B8B8;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+#about .outer .inner {
+    background-color: #FF5700;
+    padding: 10px;
+}
+.outer {} .inner {} #contact {} #contact label {
+    display: block;
+    margin-top: 25px;
+    color: #7F7F7F;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.backlink {} .nav.navbar-nav a {
+    color: #FFFFFF;
+    font-size: 1.1em;
+}
+.nav.navbar-nav li.active {
+    border-bottom: 1px solid #FF5700;
+}
+.carousel-caption {
+    text-transform: uppercase;
+    left: 0%;
+    right: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    bottom: initial;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-caption i.fa {
+    border: 1px solid #FF5700;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    padding-right: 2px;
+}
+.carousel-caption a {
+    color: #FFFFFF;
+}
+.carousel-caption p {
+    margin-top: 70px;
+}
+.carousel-caption p span {
+    border-bottom: 1px solid #FF5700;
+    border-top: 1px solid #FF5700;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+.left.carousel-control {
+    left: -35px;
+}
+.right.carousel-control {
+    right: -35px;
+}
+.navbar-header .navbar-brand,
+footer.footer .logo span {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FF5700;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.navbar.navbar-fixed-top {
+    padding-top: 24px;
+    border: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.66);
+}
+.nav.navbar-nav li a:hover {
+    background-color: transparent;
+    border-bottom: 1px solid #FF5700;
+}
+.nav.navbar-nav li.active a {
+    background-color: transparent;
+    border-bottom: 1px solid #FF5700;
+}
+.section-title {
+    display: table;
+    margin: 0 auto 70px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: #FF5700;
+    color: #FFFFFF;
+    -webkit-box-shadow: 6px 6px #000000;
+    box-shadow: 6px 6px #000000;
+}
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.carousel-caption h3 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+footer.footer {
+    background-color: #353535;
+    color: #FFFFFF;
+    margin-top: 15px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 0.8em;
+}
+footer.footer > * {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+footer.footer .socials .fa {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #FF5700;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+footer.footer a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.navbar.navbar-fixed-top.inbody {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-top: 14px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.inbody a {
+    color: #000000 !important;
+    text-shadow: 0px 0px;
+}
+@media (min-width: 650px) and (max-width: 919px) {
+    .nav.navbar-nav.navbar-right.text-uppercase li a {
+        font-size: 0.8em;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}
+@media (max-width: 919px) {
+    .carousel-caption h3 {
+        font-size: 1.5em;
+    }
+    .carousel-caption p {
+        font-size: 1em;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 25px;
+    }
+    .carousel-caption {
+        transform: none;
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        bottom: 20px;
+        top: auto;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 649px) {
+    nav.navbar ul {
+        background-color: rgba(0, 0, 0, 0.80);
+    }
+}
+.search {
+    margin-top: 2vmax;
+}
+th {
+    color: red;
+    font-family: 'Muli', sans-serif;
+}
+td {
+    font-family: Impact, sans-serif;
+}
+.panel-body {
+    font-family: 'Roboto Slab', serif;
+}
+.panel-heading {
+    font-family: 'Oswald', sans-serif;
+}
+.card-title {
+    font-family: Impact, sans-serif;
+}
