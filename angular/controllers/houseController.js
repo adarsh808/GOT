@@ -18,14 +18,12 @@ myApp.controller('houseController', ['$scope', '$routeParams', '$http', 'data2Se
                 }, function errorCallback(response1) {
                     alert("error");
                 }); //end of http request for overlord
-
                 $http.get($scope.housedata[i].founder).then(function successCallback(response1) {
                     console.log(response1.data);
                     $scope.founder = response1.data.name;
                 }, function errorCallback(response1) {
                     alert("error");
                 }); //end of httprequest for founder
-
                 for (j in $scope.housedata[i].swornMembers) {
                     $scope.sworn = [];
                     $http.get($scope.housedata[i].swornMembers[j]).then(function successCallback(response1) {
@@ -36,12 +34,9 @@ myApp.controller('houseController', ['$scope', '$routeParams', '$http', 'data2Se
                         alert("error");
                     }); //end of http request for sworn
                 }
-
             }
         }
-
     }, function errorCallback(response) {
         alert('some error');
     }); // end of service requst call for house data 
-
 }]); //end of controller

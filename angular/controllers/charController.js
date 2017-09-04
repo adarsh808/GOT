@@ -25,7 +25,6 @@ myApp.controller('charController', ['$scope', '$routeParams', '$http', 'data1Ser
                 }
             }
         }
-
     }, function errorCallback(response) {
         alert('some error');
     }); //end of character http request

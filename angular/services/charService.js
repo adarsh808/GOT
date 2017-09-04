@@ -6,6 +6,5 @@ myApp.service('data1Service', ['$http', function($http) {
             method: 'GET',
             url: this.baseUrl + '/characters?pageSize=50'
         });
-
     }
 }]);

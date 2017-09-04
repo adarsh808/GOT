@@ -6,7 +6,6 @@ myApp.service('data2Service', ['$http', function($http) {
             method: 'GET',
             url: this.baseUrl + '/houses'
         });
-
     }
 }]);
 

@@ -6,6 +6,5 @@ myApp.service('dataService', ['$http', function($http) {
             method: 'GET',
             url: this.baseUrl + '/books'
         });
-
     }
 }]);

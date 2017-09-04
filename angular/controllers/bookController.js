@@ -24,13 +24,9 @@ myApp.controller('bookController', ['$scope', '$routeParams', '$http', 'dataServ
                         alert("error");
                     }); //end of http request for pov characters
                 }
-
             }
         }
-
     }, function errorCallback(response) {
         alert('some error');
     }); // end of http request for book data api 
-
-
 }]); //end of controller

@@ -9,6 +9,5 @@ myApp.directive("houseList",function(){
            houseObject:"="
 		}
 	}
-
 });
     

@@ -8,5 +8,4 @@ myApp.directive("charList",function(){
            charObject:"="
 		}
 	}
-
 });
